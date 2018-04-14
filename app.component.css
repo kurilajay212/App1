@@ -1,0 +1,63 @@
+div.a{
+     background:white;
+    height: 100px;
+    width:100%;
+    margin:0 !important;
+}
+div.b{
+    
+    height: 750px;
+    width:100%;
+    margin:0 !important;
+}
+div.c{
+    background:green;
+    height: 750px;
+    width:33.3333%;
+         float:left; 
+         
+}
+div.d{
+    background:red;
+    height: 750px;
+    width:33.333333%;
+    float:left;
+    margin:0 !important;
+}
+div.e{
+    background:orange;
+    height: 750px;
+    width:33.33333%;
+        float:left;
+        margin:0 !important;
+  
+}
+div.f{
+    height:120px;
+    width:100%;
+    margin:0 !important;
+}
+div.g{
+     background:white;
+    height:50px;
+    width:100%;
+    margin:0 !important;
+}
+.lab2{
+    
+  font-size:22px;
+  font-family: Italic;
+  font-weight: normal;
+  color: black;
+  float:left;
+  margin: 10px 20px 05px 20px;
+}
+
+.lab1{
+  font-size:30px;
+  font-family: Italic;
+  font-weight: normal;
+  color: black;
+  float:left;
+  margin: 20px 20px 05px 04px;
+}

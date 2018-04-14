@@ -1,0 +1,83 @@
+<!--The whole content below can be removed with the new code.-->
+<div class="a"style="text-align:center">
+  <div style="width:40%;height:50px;float:left">
+    <img width="60px" height="60px" style="float:left;margin-top:7px;margin-left:7px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAADfQAAA30B9OarxAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHiSURBVHic7djBaVZBGIbR72pc2U56SDa2kZ2F2EKwAitIegi4tw9BiDIWYBYqc/2R55wC3pnFAwNzrLVmm/vrh5m52TfICx7n7ul219irXUP8nwQQJ4A4AcQJIE4AcQKIE0CcAOIEECeAOAHECSBOAHECiBNAnADiBBB3tXnv3cy83rz5N3f4dNL2+5n5eNL27/qxc2xvAHdPzzPzvHXzT91fn3n+97l7+nbi/j/nCYgTQJwA4gQQJ4A4AcQJIE4AcQKIE0CcAOIEECeAOAHECSBOAHECiBNAnADiBBAngDgBxAkgTgBxAogTQJwA4gQQJ4A4AcQJIE4AcQKIE0CcAOIEECeAOAHECSBOAHECiBNAnADiBBAngDgBxAkgTgBxAogTQJwA4gQQJ4A4AcQJIE4AcQKIE0CcAOIEECeAOAHECSBOAHECiBNAnADiBBAngDgBxAkgTgBxAogTQJwA4gQQJ4A4AcQJIE4AcQKIE0CcAOIEECeAOAHECSBOAHECiBNAnADiri59gRN8mZkPJ21/Pmn3Yo611qXvwAV5AuIEECeAOAHECSBOAHECiNv6EXQcx9uZebNzk188r7W+7hrb+hF0HMfDzNxsG+Qlj2ut211jnoA4AcQJIE4AcQKI+wluGyWTgCgapAAAAABJRU5ErkJggg==" />
+    <label class="lab1">Travel Partner</label>  
+  </div>
+  <div style="width:60%;height:50px;float:left">
+    <button style="color:Black;background-color:transparent;font-size:22px;border:none;margin-top:50px;position:absolute;right:0;margin:15px;margin-right:70px !important" (click)="check()">Login</button> 
+    <button style="color:Black;background-color:transparent;font-size:22px;border:none;margin-top:50px;position:absolute;right:0;margin:15px;margin-right:150px !important"(click)="check2()">Sign Up</button> 
+    <img width="40px" height="40px" style="position:absolute;right:0;margin:15px" src="../../assets/account.jpg"/>
+  </div>
+</div>
+<div class="g">
+    <label class="lab2" routerLink="home"id="1" (click)="ChangeColor($event)">Home</label>  
+    <label class="lab2" routerLink="travel"id="2" (click)="ChangeColor($event)">Travel Destinations</label> 
+    <label class="lab2"id="3" (click)="ChangeColor($event)" >Stories</label>
+    <label class="lab2"id="4" (click)="ChangeColor($event)">Trending</label>     
+    <label class="lab2"id="5" (click)="ChangeColor($event)">Contact Us</label>    
+    <label class="lab2"id="6" (click)="ChangeColor($event)">About Us</label>          
+</div>  
+<div class="b">
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:380px">
+
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-indigo w3-display-topright" title="Close Modal">&times;</span>
+        <img src="../../assets/img_avatar3.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+      </div>
+
+      <form class="w3-container" action="/action_page.php">
+        <div class="w3-section">
+          <label><b>Username</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+          <label><b>Password</b></label>
+          <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="psw" required>
+          <button class="w3-button w3-block w3-teal w3-section w3-padding" type="submit">Login</button>
+          <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
+        </div>
+      </form>
+
+      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-indigo">Cancel</button>
+        <span class="w3-right w3-padding w3-hide-small"> <a href="#">Forgot password?</a></span>
+      </div>
+
+    </div>
+  </div>
+  <div id="id02" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:380px">
+
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-xlarge w3-hover-indigo w3-display-topright" title="Close Modal">&times;</span>
+        <img src="../../assets/img_avatar3.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+      </div>
+
+      <form class="w3-container" action="/action_page.php">
+        <div class="w3-section">
+          <label><b>Username </b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" [(ngModel)]=username required>
+           <label><b>Contact</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Contact" name="contact" required>
+          <label><b>Password</b></label>
+          <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="psw" [(ngModel)]=password required>
+          <label><b>Confirm Password</b></label>
+          <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="psw" required>
+          <button class="w3-button w3-block w3-teal w3-section w3-padding" type="submit" (click)="postdata()">Sign Up</button>
+        
+        </div>
+      </form>
+
+      <!--<div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <button onclick="document.getElementById('id02').style.display='none'" type="button" class="w3-button w3-indigo">Cancel</button>
+       
+      </div>-->
+
+    </div>
+  </div>
+  <router-outlet></router-outlet>  
+</div>  
+<div class="f">   
+
+</div>
+ 
